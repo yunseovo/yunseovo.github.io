@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>김윤서다</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">윤서최고</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead bg-secondary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5" src="data:image/jpeg;base64,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" alt="">
+
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading text-uppercase mb-0">윤똥이윤똥이윤똥이</h1>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">김윤서22세푸하학최고</p>
+
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
+
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Portfolio Grid Items -->
+      <div class="row">
+
+        <!-- Portfolio Item 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/game.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+          </div>
+        </div>
+
+        <!-- Portfolio Item 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">안녕하세요 김윤서입니다.</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">내꺼야내꺼야내꺼야김윤서꺼야내꺼야</p>
+        </div>
+      </div>
+
+      <!-- About Section Button -->
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
+          <i class="fas fa-download mr-2"></i>
+          Free Download!
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- Contact Section Form -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+          <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Name</label>
+                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Email Address</label>
+                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Phone Number</label>
+                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">2215 John Daniel Drive
+            <br>Clark, MO 65243</p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fa-shower"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-dribbble"></i>
+          </a>
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">About Freelancer</h4>
+          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
+            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Your Website 2019</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>
